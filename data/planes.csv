@@ -1,4 +1,4 @@
-"","tailnum","year","type","manufacturer","model","engines","seats","speed","engine"
+"sn","tailnum","year","type","manufacturer","model","engines","seats","speed","engine"
 "1","N101DQ",2020,"Fixed wing multi engine","AIRBUS","A321-211",2,199,0,"Turbo-fan"
 "2","N101DU",2018,"Fixed wing multi engine","C SERIES AIRCRAFT LTD PTNRSP","BD-500-1A10",2,133,0,"Turbo-fan"
 "3","N101HQ",2007,"Fixed wing multi engine","EMBRAER-EMPRESA BRASILEIRA DE","ERJ 170-200 LR",2,80,0,"Turbo-fan"
