@@ -10,7 +10,7 @@ SELECT *
 FROM airlines;
 
 COPY airlines /*copy table_name*/
-FROM 'C:\Users\eustudyassist\Documents\new-york-flight-analysis\data\airlines.csv'
+FROM 'C:\Users\HomePC\Documents\SQL\new-york-flight-analysis\data\airlines.csv'
 WITH (FORMAT CSV, HEADER);
 
 CREATE TABLE airports (
@@ -29,9 +29,32 @@ CREATE TABLE airports (
 DROP TABLE airports;
 
 COPY airports
-FROM 'C:\Users\eustudyassist\Documents\new-york-flight-analysis\data\airports.csv'
+FROM 'C:\Users\HomePC\Documents\SQL\new-york-flight-analysis\data\airports.csv'
 WITH (FORMAT CSV, HEADER, NULL 'NA');
 
 
 SELECT *
 FROM airports;
+
+
+
+DROP TABLE planes;
+CREATE TABLE planes(
+          sn SMALLINT,
+          tailnum CHAR(6),
+   		  year INT,
+          type VARCHAR(50),
+          manufacturer VARCHAR(50),
+          model VARCHAR(50),
+		  engines CHAR(1),
+		  seats SMALLINT,
+		  speed SMALLINT,
+		  engine VARCHAR(50)
+);
+
+COPY planes
+FROM 'C:\Users\HomePC\Documents\SQL\new-york-flight-analysis\data\planes.csv'
+WITH (FORMAT CSV, HEADER, NULL 'NA');
+
+SELECT *
+FROM planes;
