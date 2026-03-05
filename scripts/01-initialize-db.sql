@@ -10,7 +10,7 @@ SELECT *
 FROM airlines;
 
 COPY airlines /*copy table_name*/
-FROM 'C:\Users\HomePC\Documents\SQL\new-york-flight-analysis\data\airlines.csv'
+FROM 'C:\Users\HomePC\Documents\SQL\new-york-flight-analysis\data\airlines.csv' -- Edit line to reference file on local computer path
 WITH (FORMAT CSV, HEADER);
 
 CREATE TABLE airports (
@@ -29,7 +29,7 @@ CREATE TABLE airports (
 DROP TABLE airports;
 
 COPY airports
-FROM 'C:\Users\HomePC\Documents\SQL\new-york-flight-analysis\data\airports.csv'
+FROM 'C:\Users\HomePC\Documents\SQL\new-york-flight-analysis\data\airports.csv' -- Edit line to reference file on local computer path
 WITH (FORMAT CSV, HEADER, NULL 'NA');
 
 
@@ -50,7 +50,7 @@ CREATE TABLE planes(
 );
 
 COPY planes
-FROM 'C:\Users\eustudyassist\Documents\new-york-flight-analysis\data\planes.csv'
+FROM 'C:\Users\eustudyassist\Documents\new-york-flight-analysis\data\planes.csv' -- Edit line to reference file on local computer path
 WITH (FORMAT CSV, HEADER, NULL 'NA');
 
 SELECT *
@@ -76,7 +76,7 @@ CREATE TABLE weather(
 );
 
 COPY weather
-FROM 'C:\Users\eustudyassist\Documents\new-york-flight-analysis\data\weather.csv'
+FROM 'C:\Users\eustudyassist\Documents\new-york-flight-analysis\data\weather.csv' -- Edit line to reference file on local computer path
 WITH (FORMAT CSV, HEADER, NULL 'NA');
 
 SELECT *
