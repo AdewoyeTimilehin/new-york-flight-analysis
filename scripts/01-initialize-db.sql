@@ -112,3 +112,13 @@ WITH (FORMAT CSV, HEADER, NULL 'NA');
 
 SELECT *
 FROM flights;
+
+SELECT *
+FROM airports;
+
+-- Import select columns
+
+
+-- Import with default
+-- export tables
+-- Maths in SQL 
