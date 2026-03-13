@@ -47,3 +47,17 @@ SELECT
 	distance * 1.609 AS dist_in_km
 FROM flights
 ORDER BY dist_in_km DESC;
+
+-- INBUILT MATH FUNCTIONS 
+-- Means (AVG)
+
+SELECT *
+FROM weather;
+
+SELECT 
+	ROUND((AVG (temp))::numeric, 2)
+FROM weather;
+
+SELECT 
+	AVG (dewp)::numeric
+FROM weather
