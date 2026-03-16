@@ -1,6 +1,6 @@
 # nycflight23 ✈️
 
-![JFK Airport](https://commons.wikimedia.org/wiki/File:Airports_New_York_City_Map.png)
+![NYC Airports Map](JFK_Aerial_Nov_14_2018.jpg)
 
 ## Introduction
 The nycflight23 dataset is a <u>rich</u> collection of flight records from New York City in the year 2023. It provides detailed information about departures, arrivals, delays, airlines, and airports, making it an excellent resource for data analysis, visualization, and machine learning projects.
