@@ -61,3 +61,43 @@ FROM weather;
 SELECT 
 	AVG (dewp)::numeric
 FROM weather
+
+-- Median (discrete and continuous)
+-- percentile_cont percentile_disc
+
+SELECT *
+FROM weather;
+
+SELECT
+	MIN(day) AS min_day,
+	PERCENTILE_CONT(.5) WITHIN GROUP (ORDER BY day) AS median_day,
+	MAX(day) AS max_day
+FROM weather;
+
+SELECT
+	MIN(day) AS min_day,
+	PERCENTILE_DISC(.5) WITHIN GROUP (ORDER BY day) AS median_day,
+	MAX(day) AS max_day
+FROM weather;
+
+SELECT
+	MIN(day) AS min_day,
+	PERCENTILE_DISC(ARRAY[.25, .5, .75]) WITHIN GROUP (ORDER BY day) AS median_day,
+	MAX(day) AS max_day
+FROM weather;
+
+SELECT
+	MODE() WITHIN GROUP (ORDER BY day)
+FROM weather;
+
+SELECT
+	day,
+	COUNT(day) AS day_counts
+FROM weather
+GROUP BY day
+ORDER BY day_counts desc;
+
+
+
+
+	
